@@ -145,6 +145,6 @@ button {
   width: 224px;
 }
 
-.editMode .label {
+.editMode .label, .editMode .task:not(.input) {
   display: none;
 }
