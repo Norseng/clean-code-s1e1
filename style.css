@@ -1,14 +1,14 @@
 /* Reset default styles */
-li, 
-h3 {
-  list-style: none;
-}
 input,
 button {
   outline: none;
 }
 /* Heading */
-.h3 {
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+.h2 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
