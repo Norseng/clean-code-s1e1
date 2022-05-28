@@ -41,13 +41,13 @@
   margin: 0 auto 0;
 }
 /* Task list */
-.ul {
+.task-list {
   margin: 0;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.task {
+.task-list__task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -56,19 +56,10 @@
   justify-content: space-between;
   align-items: center;
 }
-.task > * {
+.task-list__task > * {
   vertical-align: middle;
 }
-.task__inner {
-  flex: 1 0 auto;
-  display: flex;
-  align-items: center;
-}
-.task_completed .input {
-  text-decoration: line-through;
-  color: #888;
-}
-.task_editable .input {
+.task-list__task_editable .task-list__input {
   border-color: #ddd;
   background-color: #fff;
   height: 21px;
@@ -76,7 +67,13 @@
   pointer-events: all;
   text-decoration: none;
 }
-.input {
+.task-list__task_completed .task-list__input,
+.task-list__task_completed .button {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-list__input {
   margin: 0;
   line-height: 18px;
   border: 1px solid transparent;
@@ -92,10 +89,10 @@
   pointer-events: none;
   outline: none;
 }
-.input:focus {
+.task-list__input:focus {
   color: #333;
 }
-.input-checkbox {
+.task-list__input-checkbox {
   margin: 0 10px;
   outline: none;
 }
