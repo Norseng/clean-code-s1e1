@@ -56,9 +56,6 @@
   justify-content: space-between;
   align-items: center;
 }
-.task-list__task > * {
-  vertical-align: middle;
-}
 .task-list__task_editable .task-list__input {
   border-color: #ddd;
   background-color: #fff;
@@ -72,7 +69,6 @@
   text-decoration: line-through;
   color: #888;
 }
-
 .task-list__input {
   margin: 0;
   line-height: 18px;
