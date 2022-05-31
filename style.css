@@ -1,0 +1,116 @@
+/* Heading */
+.h1 {
+  position: fixed;
+  transform: scale(0);
+}
+.h2 {
+  color: #333;
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #333;
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+/* Basic Style */
+.body {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.header {
+  width: 500px;
+  margin: 0 auto;
+  display: block;
+  text-align: right;
+}
+.header__img {
+  width: 100%;
+}
+.header__info-link {
+  font-family: fantasy, cursive;
+}
+@media (max-width: 768px) {
+  .header { 
+    text-align: center;
+  }
+}
+.main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+/* Task list */
+.task-list {
+  margin: 0;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.task-list__task {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-list__task_editable .task-list__input {
+  border-color: #ddd;
+  background-color: #fff;
+  height: 21px;
+  color: #888;
+  pointer-events: all;
+  text-decoration: none;
+}
+.task-list__task_completed .task-list__input,
+.task-list__task_completed .button {
+  text-decoration: line-through;
+  color: #888;
+}
+.task-list__input {
+  margin: 0;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  padding-left: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+  flex: 1 0 auto;
+  height: auto;
+  color: #333;
+  background-color: transparent;
+  pointer-events: none;
+  outline: none;
+}
+.task-list__input:focus {
+  color: #333;
+}
+.task-list__input-checkbox {
+  margin: 0 10px;
+  outline: none;
+}
+/* Buttons */
+.button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+.button:hover {
+  color: #3a3a3a;
+}
+.button__img {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+.button__img:hover {
+  transform: rotateZ(0);
+}
